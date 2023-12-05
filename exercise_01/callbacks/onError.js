@@ -7,3 +7,11 @@
  * output:
  *  - empty array
  */
+/**
+ * @description
+ * @returns {Array}
+ */
+
+const onError = function () {
+  return [];
+};
