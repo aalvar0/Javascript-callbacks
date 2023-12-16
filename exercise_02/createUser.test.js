@@ -29,9 +29,9 @@ describe("Given function createUser", () => {
 
         // Assert
         expect(result).toEqual(
-          "User with email " + email + " has been correctly created"
+          "User with email " + email + " has been correctly created",
         );
-      }
+      },
     );
   });
 });

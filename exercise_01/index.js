@@ -26,6 +26,6 @@ console.log(resultEmptyString);
 const resultString = transformStringToArray(
   "Bon dia em dic Marc",
   onError,
-  onSuccess
+  onSuccess,
 );
 console.log(resultString);

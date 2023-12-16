@@ -26,6 +26,6 @@ console.log(resultEmptyString);
 const resultString = transformStringToArray(
   "Mi nombre es Alvaro",
   onError,
-  onSuccess
+  onSuccess,
 );
 console.log(resultString);

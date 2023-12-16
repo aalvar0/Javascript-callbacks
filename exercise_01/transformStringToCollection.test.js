@@ -45,7 +45,7 @@ describe("Given function transformStringToArray", () => {
     const result = transformStringToArray(
       emptyString,
       mockOnError,
-      mockOnSuccess
+      mockOnSuccess,
     );
     // Assert
     expect(result).toEqual([]);
@@ -58,7 +58,7 @@ describe("Given function transformStringToArray", () => {
     const result = transformStringToArray(
       fulfilledString,
       mockOnError,
-      mockOnSuccess
+      mockOnSuccess,
     );
     // Assert
     expect(result).toEqual(["Mi", "nombre", "es", "Alvaro"]);
