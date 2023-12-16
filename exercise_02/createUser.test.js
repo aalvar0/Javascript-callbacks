@@ -11,7 +11,7 @@ describe("Given function createUser", () => {
   const mockOnSuccess = jest
     .fn()
     .mockImplementation(
-      (email) => `User with email ${email} has been correctly created`
+      (email) => `User with email ${email} has been correctly created`,
     );
   describe("When the function is called with an empty string value", () => {
     test("Then the text Error: user not created should be returned.", () => {
@@ -42,10 +42,10 @@ describe("Given function createUser", () => {
 
         // Assert
         expect(result).toEqual(
-          "User with email " + email + " has been correctly created"
+          "User with email " + email + " has been correctly created",
         );
         expect(mockOnSuccess).toHaveBeenCalledTimes(1);
-      }
+      },
     );
     test(
       "Then the text User with email " +
@@ -62,10 +62,10 @@ describe("Given function createUser", () => {
 
         // Assert
         expect(result).toEqual(
-          "User with email " + email + " has been correctly created"
+          "User with email " + email + " has been correctly created",
         );
         expect(mockOnSuccess).toHaveBeenCalledTimes(1);
-      }
+      },
     );
     test(
       "Then the text User with email " +
@@ -81,11 +81,9 @@ describe("Given function createUser", () => {
         const result = createUser(email, mockOnError, mockOnSuccess);
 
         // Assert
-        expect(result).toEqual(
-          "Error: user not created"
-        );
+        expect(result).toEqual("Error: user not created");
         expect(mockOnError).toHaveBeenCalledTimes(1);
-      }
+      },
     );
   });
 });
