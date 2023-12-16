@@ -1,5 +1,3 @@
-import OnSuccess from "./callbacks/OnSuccess.js";
-import onError from "./callbacks/onError.js";
 import createUser from "./createUser.js";
 
 describe("Given function createUser", () => {
