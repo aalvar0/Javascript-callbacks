@@ -8,7 +8,7 @@ console.log(resultNumber);
 
 //test with value as array and log result
 
-const resultArray = transformStringToArray([1, 2, "hello"], onError, onSuccess);
+const resultArray = transformStringToArray([1, 2, "enjoy"], onError, onSuccess);
 console.log(resultArray);
 
 //test with value as boolean and log result
@@ -24,8 +24,8 @@ console.log(resultEmptyString);
 //test with value as string and log result
 
 const resultString = transformStringToArray(
-  "Bon dia em dic Marc",
+  "Mi nombre es Alvaro",
   onError,
-  onSuccess,
+  onSuccess
 );
 console.log(resultString);
