@@ -1,4 +1,5 @@
 import transformStringToArray from "./transformStringToCollection.js";
+import validateString from "../helpers/validateString.js";
 
 describe("Given function transformStringToArray", () => {
   beforeEach(() => {
@@ -63,5 +64,15 @@ describe("Given function transformStringToArray", () => {
     // Assert
     expect(result).toEqual(["Mi", "nombre", "es", "Alvaro"]);
     expect(mockOnSuccess).toHaveBeenCalledTimes(1);
+  });
+  test("value is a string type", () => {
+    // Arrange
+    const email = "  ";
+
+    // Act
+    const result = validateString(email);
+
+    // Assert
+    expect(result).toEqual(false);
   });
 });

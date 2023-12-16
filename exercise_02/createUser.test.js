@@ -1,4 +1,5 @@
 import createUser from "./createUser.js";
+import validateString from "../helpers/validateString.js";
 
 describe("Given function createUser", () => {
   beforeEach(() => {
@@ -83,6 +84,21 @@ describe("Given function createUser", () => {
         // Assert
         expect(result).toEqual("Error: user not created");
         expect(mockOnError).toHaveBeenCalledTimes(1);
+      },
+    );
+    test(
+      "Then the text User with email " +
+        email +
+        " has been correctly created should be returned.",
+      () => {
+        // Arrange
+        const email = "johndoe@gmail.com";
+
+        // Act
+        const result = validateString(email);
+
+        // Assert
+        expect(result).toEqual(true);
       },
     );
   });
